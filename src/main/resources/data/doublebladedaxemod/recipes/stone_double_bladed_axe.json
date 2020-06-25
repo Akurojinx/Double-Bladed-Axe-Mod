@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X X",
+    "XIX",
+	" I "
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:cobblestone"
+    },
+	"I": {
+	  "item": "minecraft:stick"
+	}
+  },
+  "result": {
+    "item": "doublebladedaxemod:stone_double_bladed_axe"
+  }
+}

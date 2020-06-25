@@ -1,0 +1,13 @@
+modLoader="javafml"
+loaderVersion="[31,)"
+[[mods]] 
+modId="doublebladedaxemod"
+version="1.0.0"
+displayName="Double-Bladed Axe Mod"
+#logoFile="examplemod.png" 
+credits="Thanks to Megapig for giving me this idea, as well as Nyameru and YetisYell for helping with art and combat balancing" #optional
+authors="Designed and Programmed by Akurojinx"
+description='''
+
+A light-weight mod that adds in double-bladed axes that can be imbued with potions.
+'''
