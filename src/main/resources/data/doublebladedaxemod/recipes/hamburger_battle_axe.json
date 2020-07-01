@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "B B",
+    "MIM",
+	" I "
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:bread"
+    },
+	"M":{
+		"item": "minecraft:cooked_beef"
+	},
+	"I": {
+	  "item": "minecraft:stick"
+	}
+  },
+  "result": {
+    "item": "doublebladedaxemod:hamburger_battle_axe"
+  }
+}

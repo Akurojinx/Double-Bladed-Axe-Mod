@@ -3,5 +3,8 @@
 	"item.doublebladedaxemod.stone_double_bladed_axe":		"石の鉞",
 	"item.doublebladedaxemod.iron_double_bladed_axe":		"鉄の鉞",
 	"item.doublebladedaxemod.gold_double_bladed_axe":		"金の鉞",
-	"item.doublebladedaxemod.diamond_double_bladed_axe":	"ダイヤモンドの鉞"
+	"item.doublebladedaxemod.diamond_double_bladed_axe":	"ダイヤモンドの鉞",
+	"item.doublebladedaxemod.netherite_double_bladed_axe":	"ネザライトの鉞",
+	"item.doublebladedaxemod.hamburger_battle_axe":			"ハンバーガーの鉞",
+	"item.doublebladedaxemod.tnt_double_bladed_axe":		"TNTの鉞"
 }

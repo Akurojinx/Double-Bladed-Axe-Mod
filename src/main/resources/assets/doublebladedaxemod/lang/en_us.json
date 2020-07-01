@@ -3,5 +3,8 @@
 	"item.doublebladedaxemod.stone_double_bladed_axe":		"Stone Double Bladed Axe",
 	"item.doublebladedaxemod.iron_double_bladed_axe":		"Iron Double Bladed Axe",
 	"item.doublebladedaxemod.gold_double_bladed_axe":		"Gold Double Bladed Axe",
-	"item.doublebladedaxemod.diamond_double_bladed_axe":	"Diamond Double Bladed Axe"
+	"item.doublebladedaxemod.diamond_double_bladed_axe":	"Diamond Double Bladed Axe",
+	"item.doublebladedaxemod.netherite_double_bladed_axe":	"Netherite Double Bladed Axe",
+	"item.doublebladedaxemod.hamburger_battle_axe":			"Hamburger Battle Axe",
+	"item.doublebladedaxemod.tnt_double_bladed_axe":		"TNT Double Bladed Axe"
 }

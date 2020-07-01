@@ -3,5 +3,8 @@
 	"item.doublebladedaxemod.stone_double_bladed_axe":		"石战斧",
 	"item.doublebladedaxemod.iron_double_bladed_axe":		"铁战斧",
 	"item.doublebladedaxemod.gold_double_bladed_axe":		"金战斧",
-	"item.doublebladedaxemod.diamond_double_bladed_axe":	"钻石战斧"
+	"item.doublebladedaxemod.diamond_double_bladed_axe":	"钻石战斧",
+	"item.doublebladedaxemod.netherite_double_bladed_axe":	"下界合金战斧",
+	"item.doublebladedaxemod.hamburger_battle_axe":			"汉堡战斧",
+	"item.doublebladedaxemod.tnt_double_bladed_axe":		"TNT战斧"
 }

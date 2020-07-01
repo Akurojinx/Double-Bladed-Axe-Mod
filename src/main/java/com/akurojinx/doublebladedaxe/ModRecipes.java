@@ -9,7 +9,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 public class ModRecipes {
 	
-	public static final DeferredRegister<IRecipeSerializer<?>> RECIPES = new DeferredRegister<>(ForgeRegistries.RECIPE_SERIALIZERS,DoubleBladedAxeMod.MOD_ID);
+	public static final DeferredRegister<IRecipeSerializer<?>> RECIPES = DeferredRegister.create(ForgeRegistries.RECIPE_SERIALIZERS,DoubleBladedAxeMod.MOD_ID);
 	
 	public static final RegistryObject<SpecialRecipeSerializer<PotionAxeRecipe>> POTION_AXE_RECIPE = RECIPES.register("crafting_special_axe_potion",() -> (new SpecialRecipeSerializer<>(PotionAxeRecipe::new)));
 

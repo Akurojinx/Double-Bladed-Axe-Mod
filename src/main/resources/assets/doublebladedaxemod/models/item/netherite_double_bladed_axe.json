@@ -1,0 +1,6 @@
+{
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "doublebladedaxemod:item/netherite_double_bladed_axe"
+	}
+}

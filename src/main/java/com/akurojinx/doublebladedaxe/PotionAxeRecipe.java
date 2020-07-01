@@ -1,7 +1,5 @@
 package com.akurojinx.doublebladedaxe;
 
-import org.apache.logging.log4j.LogManager;
-
 import net.minecraft.inventory.CraftingInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -26,9 +24,8 @@ public class PotionAxeRecipe extends SpecialRecipe{
 		int numAxe = 0;
 		int numPotions = 0;
 		
-		for(int i = 0; i < inv.getWidth(); i++) {
-			for(int j = 0; j < inv.getHeight(); j++) {
-				ItemStack itemStack= inv.getStackInSlot(i + j * inv.getWidth());
+		for(int i = 0; i < inv.getSizeInventory(); i++) {
+				ItemStack itemStack= inv.getStackInSlot(i);
 				if(itemStack.getItem() instanceof DoubleBladedAxeItem) {
 					if(PotionUtils.getPotionFromItem(itemStack).getEffects().size() != 0)
 						return false;
@@ -50,9 +47,8 @@ public class PotionAxeRecipe extends SpecialRecipe{
 					
 				
 			}
-		}
 		
-		LogManager.getLogger().info("Matcher man "+(numAxe == 1)+ (numPotions == 1));
+		
 		return numAxe == 1 && numPotions == 1;
 		
 	}
@@ -60,32 +56,35 @@ public class PotionAxeRecipe extends SpecialRecipe{
 	@Override
 	public ItemStack getCraftingResult(CraftingInventory inv) {
 		
+		
 		Potion potionEffect = null;
-		Item axeItem = null;
+		ItemStack axeItem = null;
 		
 		for(int i=0;i<inv.getSizeInventory();i++) {
-			if(inv.getStackInSlot(i).getItem() instanceof DoubleBladedAxeItem)
-				axeItem = inv.getStackInSlot(i).getItem();
+			ItemStack stack = inv.getStackInSlot(i);
+			Item item = stack.getItem();
+			if(item instanceof DoubleBladedAxeItem) {
+				axeItem = stack;
+			}
 			else if(inv.getStackInSlot(i).getItem() instanceof PotionItem)
 				potionEffect = PotionUtils.getPotionFromItem(inv.getStackInSlot(i));
 		}
-		LogManager.getLogger().info("I will stand on a plain and pretend it's a hill");
 		if(potionEffect == null || axeItem ==null)
 			return ItemStack.EMPTY;
 		
-		ItemStack out = new ItemStack(axeItem);
+
 
 		
-		PotionUtils.addPotionToItemStack(out, potionEffect);
+		PotionUtils.addPotionToItemStack(axeItem, potionEffect);
 		
-		return out;
+		return axeItem;
 		
 			
 	}
 
 	@Override
 	public boolean canFit(int width, int height) {
-		return true;
+		return width * height >=2;
 	}
 
 	@Override
