@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "doublebladedaxemod:diamond_double_bladed_axe"
+  },
+  "addition": {
+    "item": "minecraft:netherite_ingot"
+  },
+  "result": {
+    "item": "doublebladedaxemod:netherite_double_bladed_axe"
+  }
+}
